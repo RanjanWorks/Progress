@@ -1,0 +1,215 @@
+@import url("//fonts.googleapis.com/css?family=Google+Sans:400,500,600,700");
+@import url("//fonts.googleapis.com/css?family=Roboto+Mono:400,500");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+
+}
+:root {
+  --primaryBlue: #f3f6fc;
+  --deepBlue: #3a96ff;
+  --bg: white;
+  --textClr: black;
+  --insideWhite: white;
+  --gray: #f3f2f2;
+}
+
+body {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  background-color: var(--bg);
+  color: var(--textClr);
+  /* transition: .3s ; */
+}
+
+header {
+  position: fixed;
+background-color: var(--bg);
+  top: 0;
+  z-index:1;
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+border-bottom: 1px solid #444444;
+}
+.section {
+  width: 90%;
+  background-color: var(--primaryBlue);
+  border-radius: 25px;
+  margin: 10px auto;
+  padding: 10px;
+}
+.section {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--insideWhite);
+}
+.btn{
+  background-color: var(--insideWhite) !important;
+  color: var(--textClr)!important;
+}
+.dropdown-item{
+  cursor: pointer;
+}
+main {
+  background-color: var(--primaryBlue);
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 25px;
+  padding: 15px;
+  margin-top: 70px;
+}
+.section .progress {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-color: var(--gray);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.section .progress .bar {
+  position: absolute;
+  inset: 0;
+  width: 10%;
+  height: 100%;
+  background-color: var(--deepBlue);
+  transition: 0.2s linear;
+}
+.section .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+dialog::backdrop{
+  background-color: #000000a4;
+}
+dialog{
+  padding: 14px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% ,-50%);
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: var(--insideWhite);
+  color: var(--textClr);
+  width: clamp(200px,80%,700px);
+  border: 1px solid gray;
+}
+dialog .event input[type="text"]{
+  padding: 10px;
+  width: 100%;
+  color: var(--textClr);
+ background-color: transparent;
+  outline: none;
+  border: none;
+outline: 1.7px solid var(--deepBlue);
+border-radius: 4px;
+
+}
+dialog .inputs input[type="number"]{
+  padding: 10px;
+  width: 100%;
+  color: var(--textClr);
+ background-color: transparent;
+  outline: none;
+  border: none;
+outline: 1.7px solid var(--deepBlue);
+border-radius: 4px;
+}
+.inputs{
+ display: grid;
+ grid-template-columns: auto auto;
+ width: 100%;
+ gap: 10px;
+}
+dialog .event{
+  padding: 16px;
+  display: flex;
+  align-items: start;
+  justify-content:flex-start;
+  gap: 10px;
+  flex-direction: column;
+}
+dialog .buttonss{
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  padding: 10px;
+
+}
+dialog .buttonss button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: deeppink;
+  font-weight: 400;
+  padding: 10px 20px;
+
+
+}
+.dark {
+  --primaryBlue: #222327;
+  /* --deepBlue: #0ba14a; */
+  --bg: #000000;
+  --textClr: #f4f6ffdf;
+  --insideWhite: #131314;
+  --gray: var(--primaryBlue);
+}
+.dropdown-menu{
+background-color: var(--insideWhite);
+}
+.dropdown-menu li{
+  color: var(--textClr)!important;
+
+}
+.dropdown-menu li:hover{
+  background-color: var(--primaryBlue);
+}
+body::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+  background-color: var(--primaryBlue);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--primaryBlue);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--lightBorder);
+  border-radius: 10px;
+}
+
+@media (width <=500px) {
+  main {
+    width: 100%;
+    border-radius: 0;
+  }
+
+}

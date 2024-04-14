@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progress</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h4>Progress</h4>
+    <div class="wrapper">
+
+      <button onclick="openModel()" class="btn btn-secondary">Add</button>
+      <div class="dropdown">
+        <button id="bbtn" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Theme
+        </button>
+        <ul class="dropdown-menu">
+          <li onclick="toggleDark()" class="dropdown-item">Dark</li>
+          <li onclick="toggleLight()" class="dropdown-item">Light</li>
+          <li onclick="toggleSystem()" class="dropdown-item">System</li>
+        </ul>
+      </div>
+      <div id="root"></div>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="name">
+        <h3>🕑Next Minute</h3>
+        <p><span id="left_time"></span> seconds left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="name">
+        <h3>🕑Next Hour</h3>
+        <p><span id="left_time"></span> minutes left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="name">
+        <h3>🌅Next Day</h3>
+        <p><span id="left_time"></span> hours left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="name">
+        <h3>📆Next Week</h3>
+        <p><span id="left_time"></span> days left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="name">
+        <h3>📅Next Month</h3>
+        <p><span id="left_time"></span> days left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="name">
+        <h3>🎆Next Year</h3>
+        <p><span id="left_time"></span> days left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+    <hr />
+    <section class="section">
+      <div class="name">
+        <h3>🎅Next Christmas</h3>
+        <p><span id="left_time"></span> days left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="name">
+        <h3> 🌸Next independence india</h3>
+        <p><span id="left_time"></span> days left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="name">
+        <h3> 👨‍🏫Next Teacher's day</h3>
+        <p><span id="left_time"></span> days left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="name">
+        <h3> 💏Next Valentine's day</h3>
+        <p><span id="left_time"></span> days left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="name">
+        <h3>👶Next Children's day</h3>
+        <p><span id="left_time"></span> days left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="name">
+        <h3> 🎂My Next Birthday</h3>
+        <p><span id="left_time"></span> days left</p>
+      </div>
+      <div class="progress">
+        <div class="bar progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+          style="width: 75%"></div>
+      </div>
+    </section>
+
+  </main>
+  <dialog>
+    <div class="event">
+      <input id="inputEvent" type="text" placeholder="Event">
+      <div class="inputs">
+        <input id="inputDate" type="number" placeholder="Date">
+        <input id="inputMonth" type="number" placeholder="Month">
+      </div>
+    </div>
+    <div class="buttonss">
+      <button onclick="closeModel()">Cancel </button>
+      <button onclick="createNewEvent()">Create</button>
+    </div>
+
+  </dialog>
+  <script src="https://cdn.ranjankashyap1.repl.co/profile.js"></script>
+  <script>
+    new profile("#root");
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
